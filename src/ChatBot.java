@@ -38,19 +38,19 @@ public class ChatBot {
 		
 	}
 
-	public void botSay(String s){ //Bot response
+	private void botSay(String s){ //Bot response
 		System.out.println(botName+": "+s+"\n");
 	}
 	
-	public String userSay(){ //user response
+	private String userSay(){ //user response
 		System.out.print("You: ");
 		String response = scan.nextLine();
 		return response;
 	}
 	
-	public boolean keywordMatcher(String response, String keywords[]){
+	private boolean keywordMatcher(String response, String keywords[]){
 		for(int i = 0; i<keywords.length; i++){
-			if (response.contains(keywords[i])){
+			if (response.toLowerCase().contains(keywords[i].toLowerCase())){
 				return true;
 			}
 		}
