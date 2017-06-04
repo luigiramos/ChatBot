@@ -35,7 +35,6 @@ public class ChatBot {
 	}
 
 	private void parentsBranch() {
-		System.out.println("parents");
 		
 	}
 
